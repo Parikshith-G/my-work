@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+    <style rel="stylesheet" src="style/style.css">
+
+    </style>
+    <script src="jquery.js"></script>
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>heading</h1>
+        <div class="slider" >
+            <img src="images/1.jpg" width="300px" height="300px">
+            <img src="images/2.jpg" width="300px" height="300px">
+            <img src="images/3.jpg" width="300px" height="300px">
+            <img src="images/4.jpg" width="300px" height="300px">
+            <img src="images/5.jpg" width="300px" height="300px">
+        </div>
+        <ul id="naviagtion">
+            <li  id="prev" ><a href="#">prev</a></li>
+            <li id="next" ><a href="#">next</a></li>
+        </ul>
+
+    </div>
+    <script>
+        $(document).ready(function()
+        {
+            $(".slider").cycle(
+            {
+                fx:'fade',
+                prev:"#prev",
+                next:"#next"
+
+            });
+
+        });
+    </script>
+    
+</body>
+</html>
